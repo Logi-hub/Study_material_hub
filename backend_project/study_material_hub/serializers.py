@@ -11,16 +11,16 @@ User = get_user_model()
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
     confirm_password = serializers.CharField(write_only=True)
-
+#class
     class Meta:
         model = CustomUser
         fields = ['username', 'email', 'password', 'confirm_password', 'role', 'is_authorized_uploader']
-
+#validations 
     def validate(self, data):
         if data['password'] != data['confirm_password']:
             raise serializers.ValidationError("Passwords don't match.")
         return data
-
+#authorization
     def create(self, validated_data):
         validated_data.pop('confirm_password')
         password = validated_data.pop('password')
@@ -55,7 +55,7 @@ class StudyMaterialSerializer(serializers.ModelSerializer):
         fields = '__all__'
         read_only_fields=['uploaded_by','uploaded_at','verification_code','id']
 
-
+#uploader
 
 class UploaderProfileSerializer(serializers.ModelSerializer):
     username = serializers.CharField(source='user.username', read_only=False)
