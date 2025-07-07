@@ -7,6 +7,7 @@ from .models import StudyMaterial
 from .models import UploaderProfile
 User = get_user_model()
 
+#userserializer
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
     confirm_password = serializers.CharField(write_only=True)
