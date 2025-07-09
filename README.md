@@ -57,11 +57,11 @@ A centralized web platform to **upload, view, save, and manage study materials**
 ⚙️ Installation
 
 🔽 Clone this repo
-```bash
-git clone https://github.com/your-username/study-material-hub.git
-cd study-material-hub
 
----backend setup
+git clone https://github.com/Logi-hub/study_material_hub.git
+cd study-material-hub 
+
+🔩backend setup
 
 cd backend_project
 python -m venv env
@@ -71,14 +71,14 @@ python manage.py migrate
 python manage.py runserver
 
 
----frontend setup
+🪛frontend setup
 
 cd frontend
 npm install
 npm run dev
 
 
----project structure
+👨‍💻 project structure
 
 /workcohol project
 |-- /backend_project
@@ -101,7 +101,7 @@ JWT: On login, JWT token stored in localStorage for protected API access
 
 Forgot/Reset Password: Email OTP → reset password with validation
 
----Screenshorts
+🖥️ Screenshorts
 
 
 ![Screenshot (32)](https://github.com/user-attachments/assets/de3b0fd2-5265-4d95-8bdb-0fff639996d5)
@@ -137,7 +137,7 @@ Git
 📌 Steps
 
 # Clone the project
-git clone https://github.com/your-username/study-material-hub.git
+git clone https://github.com/Logi-hub/study_material_hub.git
 
 # Setup backend
 cd backend_project
