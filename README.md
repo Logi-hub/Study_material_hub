@@ -10,6 +10,7 @@ A centralized web platform to **upload, view, save, and manage study materials**
 - [⚙️ Installation](#️-installation)
 - [👨‍💻 Project Structure](#-project-structure)
 - [🔐 Authentication System](#-authentication-system)
+- 🔐 [Environment & Security](#environment--security)
 - [📸 Screenshots](#-screenshots)
 - [🎥 Demo Video](#-demo-video)
 - [🤝 For Contributors](#-for-contributors)
@@ -100,6 +101,26 @@ Signup: Users provide name and email → OTP sent → on success → role select
 JWT: On login, JWT token stored in localStorage for protected API access
 
 Forgot/Reset Password: Email OTP → reset password with validation
+
+
+
+ 🔐 Environment & Security
+
+✅ Ensure the following files are in .gitignore:
+
+.env
+env/
+*.pyc
+__pycache__/
+.vscode/
+frontend/.next/
+frontend/node_modules/
+
+settings.py must not contain sensitive data (use python-decouple and .env).
+
+OTP email config and DB secrets should go in .env.
+
+
 
 🖥️ Screenshorts
 
