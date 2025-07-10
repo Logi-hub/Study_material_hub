@@ -107,7 +107,7 @@ def register_uploader(request):
     except Exception as e:
         return Response({"error": str(e)}, status=400)
 
-  
+ #list materials 
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def list_materials(request):
