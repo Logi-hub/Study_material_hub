@@ -13,8 +13,7 @@ import os
 from django.http import FileResponse,Http404
 from .models import StudyMaterial
 from django.conf import settings
-from rest_framework.parsers import MultiPartParser,FormParser
-from twilio.rest import Client
+from rest_framework.parsers import MultiPartParser,FormParsert
 from django.core.mail import send_mail
 from django.conf import settings
 from .models import EmailOTP
