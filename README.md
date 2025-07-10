@@ -3,6 +3,12 @@
 A centralized web platform to **upload, view, save, and manage study materials**. Built with **Next.js + Django**, this full-stack application supports **OTP-based signup**, **JWT login**, **role-based access**, and **material preview/download features**.
 
 
+## 🎥 Project Demo
+
+[![Watch Demo](https://img.youtube.com/vi/WFG5qReschI/0.jpg)](https://youtu.be/WFG5qReschI?si=9wptA43vYCmBtXmD)
+
+
+
 🧭 Table of Contents
 
 - [🚀 Features](#-features)
